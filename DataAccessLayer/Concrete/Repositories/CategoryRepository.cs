@@ -16,6 +16,11 @@ namespace DataAccessLayer.Concrete.Repositories
         private Context c = new Context();
         private DbSet<Category> _object;
 
+        public Category Get(Expression<Func<Category, bool>> filter)
+        {
+            throw new NotImplementedException();
+        }
+
         public void Delete(Category p)
         {
             _object.Remove(p);
